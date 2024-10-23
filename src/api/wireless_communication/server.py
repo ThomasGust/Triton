@@ -2,7 +2,7 @@ import socket
 import json
 import threading
 import queue
-from api.pubsub import Publisher, Subscriber
+from src.api.tether_communication.pubsub import Publisher, Subscriber
 
 class WifiServer:
     def __init__(self, host='0.0.0.0', port=12345):

@@ -3,7 +3,7 @@ import time
 import json
 import threading
 import queue
-from api.pubsub import Publisher, Subscriber
+from src.api.tether_communication.pubsub import Publisher, Subscriber
 
 class WifiClient:
     def __init__(self, server_ip='192.168.1.2', server_port=12345, retry_interval=5, heartbeat_interval=10):
