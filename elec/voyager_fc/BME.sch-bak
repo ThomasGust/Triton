@@ -1,0 +1,151 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 67979F95
+P 5750 4550
+F 0 "#PWR?" H 5750 4300 50  0001 C CNN
+F 1 "GND" V 5755 4422 50  0000 R CNN
+F 2 "" H 5750 4550 50  0001 C CNN
+F 3 "" H 5750 4550 50  0001 C CNN
+	1    5750 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 67979F9B
+P 5750 3950
+F 0 "#PWR?" H 5750 3700 50  0001 C CNN
+F 1 "GND" V 5755 3822 50  0000 R CNN
+F 2 "" H 5750 3950 50  0001 C CNN
+F 3 "" H 5750 3950 50  0001 C CNN
+	1    5750 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 67979FA1
+P 5600 3350
+F 0 "#PWR?" H 5600 3100 50  0001 C CNN
+F 1 "GND" V 5605 3222 50  0000 R CNN
+F 2 "" H 5600 3350 50  0001 C CNN
+F 3 "" H 5600 3350 50  0001 C CNN
+	1    5600 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 67979FA7
+P 4700 3350
+F 0 "#PWR?" H 4700 3100 50  0001 C CNN
+F 1 "GND" V 4705 3222 50  0000 R CNN
+F 2 "" H 4700 3350 50  0001 C CNN
+F 3 "" H 4700 3350 50  0001 C CNN
+	1    4700 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 67979FAD
+P 5250 4850
+F 0 "#PWR?" H 5250 4600 50  0001 C CNN
+F 1 "GND" H 5255 4677 50  0000 C CNN
+F 2 "" H 5250 4850 50  0001 C CNN
+F 3 "" H 5250 4850 50  0001 C CNN
+	1    5250 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 67979FB3
+P 5050 4850
+F 0 "#PWR?" H 5050 4600 50  0001 C CNN
+F 1 "GND" H 5055 4677 50  0000 C CNN
+F 2 "" H 5050 4850 50  0001 C CNN
+F 3 "" H 5050 4850 50  0001 C CNN
+	1    5050 4850
+	1    0    0    -1  
+$EndComp
+Text GLabel 5750 4350 2    50   Input ~ 0
+SD1
+Text GLabel 5750 4150 2    50   Input ~ 0
+SC1
+$Comp
+L Sensor:BME680 U?
+U 1 1 67979FBB
+P 5150 4250
+F 0 "U?" H 4721 4296 50  0000 R CNN
+F 1 "BME680" H 4721 4205 50  0000 R CNN
+F 2 "Package_LGA:Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering" H 6600 3800 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf" H 5150 4050 50  0001 C CNN
+	1    5150 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 67979FC1
+P 4800 3350
+F 0 "C?" H 4892 3396 50  0000 L CNN
+F 1 "10uF" H 4892 3305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4800 3350 50  0001 C CNN
+F 3 "~" H 4800 3350 50  0001 C CNN
+	1    4800 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 67979FC7
+P 5500 3350
+F 0 "C?" H 5592 3396 50  0000 L CNN
+F 1 "10uF" H 5592 3305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5500 3350 50  0001 C CNN
+F 3 "~" H 5500 3350 50  0001 C CNN
+	1    5500 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 67979FCD
+P 5050 3350
+F 0 "#PWR?" H 5050 3200 50  0001 C CNN
+F 1 "+3.3V" V 5065 3478 50  0000 L CNN
+F 2 "" H 5050 3350 50  0001 C CNN
+F 3 "" H 5050 3350 50  0001 C CNN
+	1    5050 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 67979FD3
+P 5250 3350
+F 0 "#PWR?" H 5250 3200 50  0001 C CNN
+F 1 "+3.3V" V 5265 3478 50  0000 L CNN
+F 2 "" H 5250 3350 50  0001 C CNN
+F 3 "" H 5250 3350 50  0001 C CNN
+	1    5250 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 3350 5250 3650
+Wire Wire Line
+	5400 3350 5250 3350
+Connection ~ 5250 3350
+Wire Wire Line
+	4900 3350 5050 3350
+Wire Wire Line
+	5050 3350 5050 3650
+Connection ~ 5050 3350
+$EndSCHEMATC

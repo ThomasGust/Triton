@@ -1,0 +1,107 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 5300 3650 2    50   Input ~ 0
+PI_GPIO5
+Text GLabel 5000 3650 0    50   Input ~ 0
+LEAK_IN
+$Comp
+L power:GND #PWR?
+U 1 1 67940941
+P 5300 4150
+F 0 "#PWR?" H 5300 3900 50  0001 C CNN
+F 1 "GND" H 5305 3977 50  0000 C CNN
+F 2 "" H 5300 4150 50  0001 C CNN
+F 3 "" H 5300 4150 50  0001 C CNN
+	1    5300 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 5150 3100
+Wire Wire Line
+	5300 3100 5300 3250
+Wire Wire Line
+	5150 3100 5300 3100
+Wire Wire Line
+	5000 3100 5000 3250
+Wire Wire Line
+	5150 3100 5000 3100
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6794094C
+P 5150 3100
+F 0 "#PWR?" H 5150 2950 50  0001 C CNN
+F 1 "+3.3V" H 5165 3273 50  0000 C CNN
+F 2 "" H 5150 3100 50  0001 C CNN
+F 3 "" H 5150 3100 50  0001 C CNN
+	1    5150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 67940952
+P 5300 4000
+F 0 "D?" V 5339 3882 50  0000 R CNN
+F 1 "WHITE" V 5248 3882 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5300 4000 50  0001 C CNN
+F 3 "~" H 5300 4000 50  0001 C CNN
+	1    5300 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 67940958
+P 5300 3750
+F 0 "R?" H 5359 3796 50  0000 L CNN
+F 1 "220" H 5359 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 3750 50  0001 C CNN
+F 3 "~" H 5300 3750 50  0001 C CNN
+	1    5300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6794095E
+P 5000 3350
+F 0 "R?" H 5059 3396 50  0000 L CNN
+F 1 "20K" H 5059 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5000 3350 50  0001 C CNN
+F 3 "~" H 5000 3350 50  0001 C CNN
+	1    5000 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 3450
+$Comp
+L Device:R_Small R?
+U 1 1 67940965
+P 5000 3550
+F 0 "R?" H 5059 3596 50  0000 L CNN
+F 1 "1K" H 5059 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5000 3550 50  0001 C CNN
+F 3 "~" H 5000 3550 50  0001 C CNN
+	1    5000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 6794096B
+P 5200 3450
+F 0 "Q?" H 5391 3496 50  0000 L CNN
+F 1 "MMBT3906" H 5391 3405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5400 3375 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 5200 3450 50  0001 L CNN
+	1    5200 3450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

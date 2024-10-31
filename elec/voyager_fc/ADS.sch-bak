@@ -1,0 +1,112 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C_Small C?
+U 1 1 6793528D
+P 5700 3400
+F 0 "C?" V 5471 3400 50  0000 C CNN
+F 1 "10uF" V 5562 3400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5700 3400 50  0001 C CNN
+F 3 "~" H 5700 3400 50  0001 C CNN
+	1    5700 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 3400 5500 3400
+Wire Wire Line
+	5500 3550 5500 3400
+Connection ~ 5500 3400
+Wire Wire Line
+	5500 3400 5600 3400
+Text GLabel 5900 4050 2    50   Input ~ 0
+SC3
+Text GLabel 5900 4150 2    50   Input ~ 0
+SD3
+Text GLabel 5100 3950 0    50   Input ~ 0
+AIN0
+Text GLabel 5100 4050 0    50   Input ~ 0
+AIN1
+Text GLabel 5100 4150 0    50   Input ~ 0
+AIN2
+Text GLabel 5100 4250 0    50   Input ~ 0
+AIN3
+$Comp
+L power:GND #PWR?
+U 1 1 6793529D
+P 5500 4450
+F 0 "#PWR?" H 5500 4200 50  0001 C CNN
+F 1 "GND" H 5505 4277 50  0000 C CNN
+F 2 "" H 5500 4450 50  0001 C CNN
+F 3 "" H 5500 4450 50  0001 C CNN
+	1    5500 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 679352A3
+P 5900 4250
+F 0 "#PWR?" H 5900 4000 50  0001 C CNN
+F 1 "GND" V 5905 4122 50  0000 R CNN
+F 2 "" H 5900 4250 50  0001 C CNN
+F 3 "" H 5900 4250 50  0001 C CNN
+	1    5900 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 679352A9
+P 5900 3850
+F 0 "#PWR?" H 5900 3600 50  0001 C CNN
+F 1 "GND" V 5905 3722 50  0000 R CNN
+F 2 "" H 5900 3850 50  0001 C CNN
+F 3 "" H 5900 3850 50  0001 C CNN
+	1    5900 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Analog_ADC:ADS1015IDGS U?
+U 1 1 679352AF
+P 5500 4050
+F 0 "U?" H 5500 4731 50  0000 C CNN
+F 1 "ADS1015IDGS" H 5500 4640 50  0000 C CNN
+F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 5500 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads1015.pdf" H 5450 3150 50  0001 C CNN
+	1    5500 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 679352B5
+P 5250 3400
+F 0 "#PWR?" H 5250 3250 50  0001 C CNN
+F 1 "+5V" V 5265 3528 50  0000 L CNN
+F 2 "" H 5250 3400 50  0001 C CNN
+F 3 "" H 5250 3400 50  0001 C CNN
+	1    5250 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 679352BB
+P 5800 3400
+F 0 "#PWR?" H 5800 3150 50  0001 C CNN
+F 1 "GND" V 5805 3272 50  0000 R CNN
+F 2 "" H 5800 3400 50  0001 C CNN
+F 3 "" H 5800 3400 50  0001 C CNN
+	1    5800 3400
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

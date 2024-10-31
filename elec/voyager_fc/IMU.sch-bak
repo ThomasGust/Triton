@@ -1,0 +1,354 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C_Small C?
+U 1 1 6794FE95
+P 5550 3800
+AR Path="/6794FE95" Ref="C?"  Part="1" 
+AR Path="/67947564/6794FE95" Ref="C?"  Part="1" 
+F 0 "C?" H 5642 3846 50  0000 L CNN
+F 1 "0.1uf" H 5642 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5550 3800 50  0001 C CNN
+F 3 "~" H 5550 3800 50  0001 C CNN
+	1    5550 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 3800 5450 3800
+Wire Wire Line
+	5650 3800 5900 3800
+Wire Wire Line
+	5900 3800 5900 3300
+$Comp
+L power:+1V8 #PWR?
+U 1 1 6794FE9E
+P 5200 2400
+AR Path="/6794FE9E" Ref="#PWR?"  Part="1" 
+AR Path="/67947564/6794FE9E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5200 2250 50  0001 C CNN
+F 1 "+1V8" V 5215 2528 50  0000 L CNN
+F 2 "" H 5200 2400 50  0001 C CNN
+F 3 "" H 5200 2400 50  0001 C CNN
+	1    5200 2400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4900 2900 0    50   Input ~ 0
+SDL21v8
+Text GLabel 4900 3000 0    50   Input ~ 0
+SCL21v8
+$Comp
+L power:GND #PWR?
+U 1 1 6794FEA6
+P 5900 3000
+AR Path="/6794FEA6" Ref="#PWR?"  Part="1" 
+AR Path="/67947564/6794FEA6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5900 2750 50  0001 C CNN
+F 1 "GND" V 5905 2872 50  0000 R CNN
+F 2 "" H 5900 3000 50  0001 C CNN
+F 3 "" H 5900 3000 50  0001 C CNN
+	1    5900 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6794FEAC
+P 5900 3100
+AR Path="/6794FEAC" Ref="#PWR?"  Part="1" 
+AR Path="/67947564/6794FEAC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5900 2850 50  0001 C CNN
+F 1 "GND" V 5905 2972 50  0000 R CNN
+F 2 "" H 5900 3100 50  0001 C CNN
+F 3 "" H 5900 3100 50  0001 C CNN
+	1    5900 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 2400 5300 2400
+Wire Wire Line
+	5300 2400 5500 2400
+Connection ~ 5300 2400
+$Comp
+L Sensor_Motion:ICM-20948 U?
+U 1 1 6794FEB5
+P 5400 3100
+AR Path="/6794FEB5" Ref="U?"  Part="1" 
+AR Path="/67947564/6794FEB5" Ref="U?"  Part="1" 
+F 0 "U?" H 5400 2311 50  0000 C CNN
+F 1 "ICM-20948" H 5400 2220 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 5400 2100 50  0001 C CNN
+F 3 "http://www.invensense.com/wp-content/uploads/2016/06/DS-000189-ICM-20948-v1.3.pdf" H 5400 2950 50  0001 C CNN
+	1    5400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6794FEBB
+P 5400 3800
+AR Path="/6794FEBB" Ref="#PWR?"  Part="1" 
+AR Path="/67947564/6794FEBB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5400 3550 50  0001 C CNN
+F 1 "GND" V 5405 3672 50  0000 R CNN
+F 2 "" H 5400 3800 50  0001 C CNN
+F 3 "" H 5400 3800 50  0001 C CNN
+	1    5400 3800
+	0    1    1    0   
+$EndComp
+Connection ~ 5400 3800
+$Comp
+L power:GND #PWR?
+U 1 1 6794FEC2
+P 4900 2800
+AR Path="/6794FEC2" Ref="#PWR?"  Part="1" 
+AR Path="/67947564/6794FEC2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 2550 50  0001 C CNN
+F 1 "GND" V 4905 2672 50  0000 R CNN
+F 2 "" H 4900 2800 50  0001 C CNN
+F 3 "" H 4900 2800 50  0001 C CNN
+	1    4900 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6794FEC8
+P 4900 3100
+AR Path="/6794FEC8" Ref="#PWR?"  Part="1" 
+AR Path="/67947564/6794FEC8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 2850 50  0001 C CNN
+F 1 "GND" V 4905 2972 50  0000 R CNN
+F 2 "" H 4900 3100 50  0001 C CNN
+F 3 "" H 4900 3100 50  0001 C CNN
+	1    4900 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6794FECE
+P 4900 3300
+AR Path="/6794FECE" Ref="#PWR?"  Part="1" 
+AR Path="/67947564/6794FECE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 3050 50  0001 C CNN
+F 1 "GND" V 4905 3172 50  0000 R CNN
+F 2 "" H 4900 3300 50  0001 C CNN
+F 3 "" H 4900 3300 50  0001 C CNN
+	1    4900 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6794FED4
+P 4900 3400
+AR Path="/6794FED4" Ref="#PWR?"  Part="1" 
+AR Path="/67947564/6794FED4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 3150 50  0001 C CNN
+F 1 "GND" V 4905 3272 50  0000 R CNN
+F 2 "" H 4900 3400 50  0001 C CNN
+F 3 "" H 4900 3400 50  0001 C CNN
+	1    4900 3400
+	0    1    1    0   
+$EndComp
+Text GLabel 6850 4350 2    50   Input ~ 0
+SDL21v8
+Wire Wire Line
+	6600 4350 6850 4350
+Wire Wire Line
+	6600 4350 6600 4250
+Text GLabel 6500 4850 2    50   Input ~ 0
+SCL21v8
+Connection ~ 6350 4850
+Wire Wire Line
+	6350 4850 6500 4850
+Wire Wire Line
+	6350 4850 6350 4250
+Wire Wire Line
+	5550 4850 6350 4850
+Text GLabel 4200 4850 0    50   Input ~ 0
+SC2
+Text GLabel 4200 4350 0    50   Input ~ 0
+SD2
+$Comp
+L Device:R_Small R?
+U 1 1 6794FEE4
+P 6600 4150
+AR Path="/6794FEE4" Ref="R?"  Part="1" 
+AR Path="/67947564/6794FEE4" Ref="R?"  Part="1" 
+F 0 "R?" H 6659 4196 50  0000 L CNN
+F 1 "10k" H 6659 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6600 4150 50  0001 C CNN
+F 3 "~" H 6600 4150 50  0001 C CNN
+	1    6600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6794FEEA
+P 6350 4150
+AR Path="/6794FEEA" Ref="R?"  Part="1" 
+AR Path="/67947564/6794FEEA" Ref="R?"  Part="1" 
+F 0 "R?" H 6409 4196 50  0000 L CNN
+F 1 "10k" H 6409 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6350 4150 50  0001 C CNN
+F 3 "~" H 6350 4150 50  0001 C CNN
+	1    6350 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4850 4200 4850
+Connection ~ 4500 4850
+Wire Wire Line
+	4500 4250 4500 4850
+Wire Wire Line
+	5150 4850 4500 4850
+$Comp
+L Device:R_Small R?
+U 1 1 6794FEF4
+P 4500 4150
+AR Path="/6794FEF4" Ref="R?"  Part="1" 
+AR Path="/67947564/6794FEF4" Ref="R?"  Part="1" 
+F 0 "R?" H 4559 4196 50  0000 L CNN
+F 1 "10k" H 4559 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4500 4150 50  0001 C CNN
+F 3 "~" H 4500 4150 50  0001 C CNN
+	1    4500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6794FEFA
+P 4850 4150
+AR Path="/6794FEFA" Ref="R?"  Part="1" 
+AR Path="/67947564/6794FEFA" Ref="R?"  Part="1" 
+F 0 "R?" H 4909 4196 50  0000 L CNN
+F 1 "10k" H 4909 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4850 4150 50  0001 C CNN
+F 3 "~" H 4850 4150 50  0001 C CNN
+	1    4850 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 6794FF00
+P 5350 4550
+AR Path="/6794FF00" Ref="#PWR?"  Part="1" 
+AR Path="/67947564/6794FF00" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5350 4400 50  0001 C CNN
+F 1 "+1V8" H 5365 4723 50  0000 C CNN
+F 2 "" H 5350 4550 50  0001 C CNN
+F 3 "" H 5350 4550 50  0001 C CNN
+	1    5350 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 6794FF06
+P 6000 4050
+AR Path="/6794FF06" Ref="#PWR?"  Part="1" 
+AR Path="/67947564/6794FF06" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6000 3900 50  0001 C CNN
+F 1 "+1V8" H 6015 4223 50  0000 C CNN
+F 2 "" H 6000 4050 50  0001 C CNN
+F 3 "" H 6000 4050 50  0001 C CNN
+	1    6000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 6794FF0C
+P 6350 4050
+AR Path="/6794FF0C" Ref="#PWR?"  Part="1" 
+AR Path="/67947564/6794FF0C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6350 3900 50  0001 C CNN
+F 1 "+1V8" H 6365 4223 50  0000 C CNN
+F 2 "" H 6350 4050 50  0001 C CNN
+F 3 "" H 6350 4050 50  0001 C CNN
+	1    6350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 6794FF12
+P 6600 4050
+AR Path="/6794FF12" Ref="#PWR?"  Part="1" 
+AR Path="/67947564/6794FF12" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6600 3900 50  0001 C CNN
+F 1 "+1V8" H 6615 4223 50  0000 C CNN
+F 2 "" H 6600 4050 50  0001 C CNN
+F 3 "" H 6600 4050 50  0001 C CNN
+	1    6600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 6794FF18
+P 5350 4750
+AR Path="/6794FF18" Ref="Q?"  Part="1" 
+AR Path="/67947564/6794FF18" Ref="Q?"  Part="1" 
+F 0 "Q?" V 5599 4750 50  0000 C CNN
+F 1 "BSS138" V 5690 4750 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5550 4675 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 5350 4750 50  0001 L CNN
+	1    5350 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 6794FF1E
+P 6000 4250
+AR Path="/6794FF1E" Ref="Q?"  Part="1" 
+AR Path="/67947564/6794FF1E" Ref="Q?"  Part="1" 
+F 0 "Q?" V 6249 4250 50  0000 C CNN
+F 1 "BSS138" V 6340 4250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6200 4175 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 6000 4250 50  0001 L CNN
+	1    6000 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6794FF24
+P 4850 4050
+AR Path="/6794FF24" Ref="#PWR?"  Part="1" 
+AR Path="/67947564/6794FF24" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 3900 50  0001 C CNN
+F 1 "+3.3V" H 4865 4223 50  0000 C CNN
+F 2 "" H 4850 4050 50  0001 C CNN
+F 3 "" H 4850 4050 50  0001 C CNN
+	1    4850 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6794FF2A
+P 4500 4050
+AR Path="/6794FF2A" Ref="#PWR?"  Part="1" 
+AR Path="/67947564/6794FF2A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4500 3900 50  0001 C CNN
+F 1 "+3.3V" H 4515 4223 50  0000 C CNN
+F 2 "" H 4500 4050 50  0001 C CNN
+F 3 "" H 4500 4050 50  0001 C CNN
+	1    4500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4350 6600 4350
+Connection ~ 6600 4350
+Wire Wire Line
+	4200 4350 4850 4350
+Wire Wire Line
+	4850 4250 4850 4350
+Connection ~ 4850 4350
+Wire Wire Line
+	4850 4350 5800 4350
+$EndSCHEMATC
