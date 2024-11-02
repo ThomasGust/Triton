@@ -1,0 +1,137 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Logic_LevelTranslator:SN74LV1T34DBV U19
+U 1 1 672CA971
+P 4450 4050
+F 0 "U19" H 4794 4096 50  0000 L CNN
+F 1 "SN74LV1T34DBV" H 4794 4005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5100 3800 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lv1t34.pdf" H 4050 3850 50  0001 C CNN
+	1    4450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812 D4
+U 1 1 672CAF78
+P 5950 4050
+F 0 "D4" H 6294 4096 50  0000 L CNN
+F 1 "SK6812" H 6294 4005 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 6000 3750 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 6050 3675 50  0001 L TNN
+	1    5950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R75
+U 1 1 672CBB67
+P 5150 4050
+F 0 "R75" V 4954 4050 50  0000 C CNN
+F 1 "470" V 5045 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5150 4050 50  0001 C CNN
+F 3 "~" H 5150 4050 50  0001 C CNN
+	1    5150 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 4050 5000 4050
+Wire Wire Line
+	5250 4050 5650 4050
+$Comp
+L Device:R_Small R76
+U 1 1 672CC2B3
+P 5000 4300
+F 0 "R76" H 5059 4346 50  0000 L CNN
+F 1 "470" H 5059 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5000 4300 50  0001 C CNN
+F 3 "~" H 5000 4300 50  0001 C CNN
+	1    5000 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4200 5000 4050
+Connection ~ 5000 4050
+Wire Wire Line
+	5000 4050 5050 4050
+Wire Wire Line
+	4450 3750 5950 3750
+Text HLabel 5200 3750 1    50   Input ~ 0
+VCC
+Text HLabel 4150 4050 0    50   Input ~ 0
+DIN
+$Comp
+L power:GND #PWR0182
+U 1 1 672CC95B
+P 4450 4350
+F 0 "#PWR0182" H 4450 4100 50  0001 C CNN
+F 1 "GND" H 4455 4177 50  0000 C CNN
+F 2 "" H 4450 4350 50  0001 C CNN
+F 3 "" H 4450 4350 50  0001 C CNN
+	1    4450 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0183
+U 1 1 672CCD18
+P 5950 4350
+F 0 "#PWR0183" H 5950 4100 50  0001 C CNN
+F 1 "GND" H 5955 4177 50  0000 C CNN
+F 2 "" H 5950 4350 50  0001 C CNN
+F 3 "" H 5950 4350 50  0001 C CNN
+	1    5950 4350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6250 4050
+Text HLabel 5000 4400 3    50   Input ~ 0
+RGB_DIN
+Text HLabel 6750 3850 1    50   Input ~ 0
+VCC
+$Comp
+L Device:C_Small C59
+U 1 1 672CD127
+P 6750 3950
+F 0 "C59" H 6842 3996 50  0000 L CNN
+F 1 "100nF" H 6842 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6750 3950 50  0001 C CNN
+F 3 "~" H 6750 3950 50  0001 C CNN
+	1    6750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0181
+U 1 1 672CD4A9
+P 6750 4050
+F 0 "#PWR0181" H 6750 3800 50  0001 C CNN
+F 1 "GND" H 6755 3877 50  0000 C CNN
+F 2 "" H 6750 4050 50  0001 C CNN
+F 3 "" H 6750 4050 50  0001 C CNN
+	1    6750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0184
+U 1 1 672CE2A5
+P 5550 4900
+F 0 "#PWR0184" H 5550 4650 50  0001 C CNN
+F 1 "GND" H 5555 4727 50  0000 C CNN
+F 2 "" H 5550 4900 50  0001 C CNN
+F 3 "" H 5550 4900 50  0001 C CNN
+	1    5550 4900
+	1    0    0    -1  
+$EndComp
+Text HLabel 5550 4900 1    50   Input ~ 0
+GND
+$EndSCHEMATC

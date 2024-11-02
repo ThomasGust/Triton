@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 9
+Sheet 2 10
 Title ""
 Date ""
 Rev ""
@@ -13,39 +13,33 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 4450 5300 2    50   Input ~ 0
-PWM7
 $Comp
-L Driver_LED:PCA9685PW U?
+L Driver_LED:PCA9685PW U2
 U 1 1 67761A14
 P 6300 4600
-F 0 "U?" H 6300 5781 50  0000 C CNN
+F 0 "U2" H 6300 5781 50  0000 C CNN
 F 1 "PCA9685PW" H 6300 5690 50  0000 C CNN
 F 2 "Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm" H 6325 3625 50  0001 L CNN
 F 3 "http://www.nxp.com/documents/data_sheet/PCA9685.pdf" H 5900 5300 50  0001 C CNN
 	1    6300 4600
 	1    0    0    -1  
 $EndComp
-Text GLabel 4450 4000 2    50   Input ~ 0
-PWM16
 $Comp
-L Device:R_Small R?
+L Device:R_Small R22
 U 1 1 67761A1B
 P 7100 3900
-F 0 "R?" V 7296 3900 50  0000 C CNN
+F 0 "R22" V 7296 3900 50  0000 C CNN
 F 1 "220" V 7205 3900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 3900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 3900 50  0001 C CNN
 F 3 "~" H 7100 3900 50  0001 C CNN
 	1    7100 3900
 	0    -1   -1   0   
 $EndComp
-Connection ~ 5350 2400
-Connection ~ 5350 2100
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR067
 U 1 1 67761A23
 P 5100 2100
-F 0 "#PWR?" H 5100 1950 50  0001 C CNN
+F 0 "#PWR067" H 5100 1950 50  0001 C CNN
 F 1 "+5V" V 5115 2228 50  0000 L CNN
 F 2 "" H 5100 2100 50  0001 C CNN
 F 3 "" H 5100 2100 50  0001 C CNN
@@ -53,10 +47,10 @@ F 3 "" H 5100 2100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR068
 U 1 1 67761A29
 P 5100 2400
-F 0 "#PWR?" H 5100 2150 50  0001 C CNN
+F 0 "#PWR068" H 5100 2150 50  0001 C CNN
 F 1 "GND" V 5105 2272 50  0000 R CNN
 F 2 "" H 5100 2400 50  0001 C CNN
 F 3 "" H 5100 2400 50  0001 C CNN
@@ -73,15 +67,13 @@ Connection ~ 5150 2100
 Connection ~ 5150 2400
 Wire Wire Line
 	5150 2100 5350 2100
-Wire Wire Line
-	5150 2400 5350 2400
 $Comp
-L Device:C_Small C?
+L Device:C_Small C4
 U 1 1 67761A36
 P 5150 2200
-F 0 "C?" H 5242 2246 50  0000 L CNN
+F 0 "C4" H 5242 2246 50  0000 L CNN
 F 1 "0.1uF" H 5242 2155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5150 2200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5150 2200 50  0001 C CNN
 F 3 "~" H 5150 2200 50  0001 C CNN
 	1    5150 2200
 	1    0    0    -1  
@@ -89,10 +81,10 @@ $EndComp
 Wire Wire Line
 	5350 1500 5350 2100
 $Comp
-L Connector_Generic:Conn_01x16 J?
+L Connector_Generic:Conn_01x16 J8
 U 1 1 67761A3D
 P 6700 1700
-F 0 "J?" V 6825 1646 50  0000 C CNN
+F 0 "J8" V 6825 1646 50  0000 C CNN
 F 1 "PWM Power Rail 1" V 6916 1646 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 6700 1700 50  0001 C CNN
 F 3 "~" H 6700 1700 50  0001 C CNN
@@ -100,10 +92,10 @@ F 3 "~" H 6700 1700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x16 J?
+L Connector_Generic:Conn_01x16 J9
 U 1 1 67761A43
 P 6700 2250
-F 0 "J?" V 6825 2196 50  0000 C CNN
+F 0 "J9" V 6825 2196 50  0000 C CNN
 F 1 "PWM GND Rail 1" V 6916 2196 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 6700 2250 50  0001 C CNN
 F 3 "~" H 6700 2250 50  0001 C CNN
@@ -111,10 +103,10 @@ F 3 "~" H 6700 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x16 J?
+L Connector_Generic:Conn_01x16 J10
 U 1 1 67761A49
 P 6700 2800
-F 0 "J?" V 6825 2746 50  0000 C CNN
+F 0 "J10" V 6825 2746 50  0000 C CNN
 F 1 "PWM Signal Rail 1" V 6916 2746 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 6700 2800 50  0001 C CNN
 F 3 "~" H 6700 2800 50  0001 C CNN
@@ -122,10 +114,10 @@ F 3 "~" H 6700 2800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x16 J?
+L Connector_Generic:Conn_01x16 J5
 U 1 1 67761A4F
 P 3550 1800
-F 0 "J?" V 3675 1746 50  0000 C CNN
+F 0 "J5" V 3675 1746 50  0000 C CNN
 F 1 "PWM Power Rail 2" V 3766 1746 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 3550 1800 50  0001 C CNN
 F 3 "~" H 3550 1800 50  0001 C CNN
@@ -179,8 +171,6 @@ Wire Wire Line
 Connection ~ 7300 1500
 Wire Wire Line
 	7300 1500 7400 1500
-Wire Wire Line
-	5350 2400 5650 2400
 Wire Wire Line
 	5650 2400 5650 2050
 Wire Wire Line
@@ -277,77 +267,16 @@ Wire Wire Line
 Connection ~ 4150 1600
 Wire Wire Line
 	4150 1600 4250 1600
-Text GLabel 3450 2700 1    50   Input ~ 0
-PWM23
-Text GLabel 3550 2700 1    50   Input ~ 0
-PWM24
-Text GLabel 3650 2700 1    50   Input ~ 0
-PWM25
-Text GLabel 3750 2700 1    50   Input ~ 0
-PWM26
-Text GLabel 3850 2700 1    50   Input ~ 0
-PWM27
-Text GLabel 3950 2700 1    50   Input ~ 0
-PWM28
-Text GLabel 4050 2700 1    50   Input ~ 0
-PWM29
-Text GLabel 4150 2700 1    50   Input ~ 0
-PWM30
-Text GLabel 4250 2700 1    50   Input ~ 0
-PWM31
-Text GLabel 7400 2600 1    50   Input ~ 0
-PWM15
-Text GLabel 7300 2600 1    50   Input ~ 0
-PWM14
-Text GLabel 7200 2600 1    50   Input ~ 0
-PWM13
-Text GLabel 7100 2600 1    50   Input ~ 0
-PWM12
-Text GLabel 7000 2600 1    50   Input ~ 0
-PWM11
-Text GLabel 6900 2600 1    50   Input ~ 0
-PWM10
-Text GLabel 6800 2600 1    50   Input ~ 0
-PWM9
-Text GLabel 6700 2600 1    50   Input ~ 0
-PWM8
-Text GLabel 6600 2600 1    50   Input ~ 0
-PWM7
-Text GLabel 6500 2600 1    50   Input ~ 0
-PWM6
-Text GLabel 6400 2600 1    50   Input ~ 0
-PWM5
-Text GLabel 6300 2600 1    50   Input ~ 0
-PWM4
-Text GLabel 6200 2600 1    50   Input ~ 0
-PWM3
-Text GLabel 6100 2600 1    50   Input ~ 0
-PWM2
-Text GLabel 6000 2600 1    50   Input ~ 0
-PWM1
-Text GLabel 5900 2600 1    50   Input ~ 0
-PWM0
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR050
 U 1 1 67761ACD
 P 1950 2150
-F 0 "#PWR?" H 1950 2000 50  0001 C CNN
+F 0 "#PWR050" H 1950 2000 50  0001 C CNN
 F 1 "+5V" V 1965 2278 50  0000 L CNN
 F 2 "" H 1950 2150 50  0001 C CNN
 F 3 "" H 1950 2150 50  0001 C CNN
 	1    1950 2150
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 67761AD3
-P 5350 2250
-F 0 "C?" H 5465 2296 50  0000 L CNN
-F 1 "4700uF" H 5465 2205 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 5388 2100 50  0001 C CNN
-F 3 "~" H 5350 2250 50  0001 C CNN
-	1    5350 2250
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2250 1600 2250 2150
@@ -355,186 +284,186 @@ Connection ~ 2250 2150
 Wire Wire Line
 	2250 2150 2250 2200
 $Comp
-L Device:R_Small R?
+L Device:R_Small R4
 U 1 1 67761ADC
 P 4350 3900
-F 0 "R?" V 4546 3900 50  0000 C CNN
+F 0 "R4" V 4546 3900 50  0000 C CNN
 F 1 "220" V 4455 3900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 3900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 3900 50  0001 C CNN
 F 3 "~" H 4350 3900 50  0001 C CNN
 	1    4350 3900
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R5
 U 1 1 67761AE2
 P 4350 4000
-F 0 "R?" V 4546 4000 50  0000 C CNN
+F 0 "R5" V 4546 4000 50  0000 C CNN
 F 1 "220" V 4455 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 4000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 4000 50  0001 C CNN
 F 3 "~" H 4350 4000 50  0001 C CNN
 	1    4350 4000
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R6
 U 1 1 67761AE8
 P 4350 4100
-F 0 "R?" V 4546 4100 50  0000 C CNN
+F 0 "R6" V 4546 4100 50  0000 C CNN
 F 1 "220" V 4455 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 4100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 4100 50  0001 C CNN
 F 3 "~" H 4350 4100 50  0001 C CNN
 	1    4350 4100
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R7
 U 1 1 67761AEE
 P 4350 4200
-F 0 "R?" V 4546 4200 50  0000 C CNN
+F 0 "R7" V 4546 4200 50  0000 C CNN
 F 1 "220" V 4455 4200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 4200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 4200 50  0001 C CNN
 F 3 "~" H 4350 4200 50  0001 C CNN
 	1    4350 4200
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R8
 U 1 1 67761AF4
 P 4350 4300
-F 0 "R?" V 4546 4300 50  0000 C CNN
+F 0 "R8" V 4546 4300 50  0000 C CNN
 F 1 "220" V 4455 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 4300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 4300 50  0001 C CNN
 F 3 "~" H 4350 4300 50  0001 C CNN
 	1    4350 4300
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R9
 U 1 1 67761AFA
 P 4350 4400
-F 0 "R?" V 4546 4400 50  0000 C CNN
+F 0 "R9" V 4546 4400 50  0000 C CNN
 F 1 "220" V 4455 4400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 4400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 4400 50  0001 C CNN
 F 3 "~" H 4350 4400 50  0001 C CNN
 	1    4350 4400
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R10
 U 1 1 67761B00
 P 4350 4500
-F 0 "R?" V 4546 4500 50  0000 C CNN
+F 0 "R10" V 4546 4500 50  0000 C CNN
 F 1 "220" V 4455 4500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 4500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 4500 50  0001 C CNN
 F 3 "~" H 4350 4500 50  0001 C CNN
 	1    4350 4500
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R11
 U 1 1 67761B06
 P 4350 4600
-F 0 "R?" V 4546 4600 50  0000 C CNN
+F 0 "R11" V 4546 4600 50  0000 C CNN
 F 1 "220" V 4455 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 4600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 4600 50  0001 C CNN
 F 3 "~" H 4350 4600 50  0001 C CNN
 	1    4350 4600
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R12
 U 1 1 67761B0C
 P 4350 4700
-F 0 "R?" V 4546 4700 50  0000 C CNN
+F 0 "R12" V 4546 4700 50  0000 C CNN
 F 1 "220" V 4455 4700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 4700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 4700 50  0001 C CNN
 F 3 "~" H 4350 4700 50  0001 C CNN
 	1    4350 4700
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R13
 U 1 1 67761B12
 P 4350 4800
-F 0 "R?" V 4546 4800 50  0000 C CNN
+F 0 "R13" V 4546 4800 50  0000 C CNN
 F 1 "220" V 4455 4800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 4800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 4800 50  0001 C CNN
 F 3 "~" H 4350 4800 50  0001 C CNN
 	1    4350 4800
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R14
 U 1 1 67761B18
 P 4350 4900
-F 0 "R?" V 4546 4900 50  0000 C CNN
+F 0 "R14" V 4546 4900 50  0000 C CNN
 F 1 "220" V 4455 4900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 4900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 4900 50  0001 C CNN
 F 3 "~" H 4350 4900 50  0001 C CNN
 	1    4350 4900
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R15
 U 1 1 67761B1E
 P 4350 5000
-F 0 "R?" V 4546 5000 50  0000 C CNN
+F 0 "R15" V 4546 5000 50  0000 C CNN
 F 1 "220" V 4455 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 5000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 5000 50  0001 C CNN
 F 3 "~" H 4350 5000 50  0001 C CNN
 	1    4350 5000
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R16
 U 1 1 67761B24
 P 4350 5100
-F 0 "R?" V 4546 5100 50  0000 C CNN
+F 0 "R16" V 4546 5100 50  0000 C CNN
 F 1 "220" V 4455 5100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 5100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 5100 50  0001 C CNN
 F 3 "~" H 4350 5100 50  0001 C CNN
 	1    4350 5100
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R17
 U 1 1 67761B2A
 P 4350 5200
-F 0 "R?" V 4546 5200 50  0000 C CNN
+F 0 "R17" V 4546 5200 50  0000 C CNN
 F 1 "220" V 4455 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 5200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 5200 50  0001 C CNN
 F 3 "~" H 4350 5200 50  0001 C CNN
 	1    4350 5200
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R18
 U 1 1 67761B30
 P 4350 5300
-F 0 "R?" V 4546 5300 50  0000 C CNN
+F 0 "R18" V 4546 5300 50  0000 C CNN
 F 1 "220" V 4455 5300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 5300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 5300 50  0001 C CNN
 F 3 "~" H 4350 5300 50  0001 C CNN
 	1    4350 5300
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R19
 U 1 1 67761B36
 P 4350 5400
-F 0 "R?" V 4546 5400 50  0000 C CNN
+F 0 "R19" V 4546 5400 50  0000 C CNN
 F 1 "220" V 4455 5400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 5400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 5400 50  0001 C CNN
 F 3 "~" H 4350 5400 50  0001 C CNN
 	1    4350 5400
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR065
 U 1 1 67761B3C
 P 4950 2650
-F 0 "#PWR?" H 4950 2500 50  0001 C CNN
+F 0 "#PWR065" H 4950 2500 50  0001 C CNN
 F 1 "+5V" H 4965 2823 50  0000 C CNN
 F 2 "" H 4950 2650 50  0001 C CNN
 F 3 "" H 4950 2650 50  0001 C CNN
@@ -542,10 +471,10 @@ F 3 "" H 4950 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR064
 U 1 1 67761B42
 P 3650 3450
-F 0 "#PWR?" H 3650 3300 50  0001 C CNN
+F 0 "#PWR064" H 3650 3300 50  0001 C CNN
 F 1 "+5V" V 3665 3578 50  0000 L CNN
 F 2 "" H 3650 3450 50  0001 C CNN
 F 3 "" H 3650 3450 50  0001 C CNN
@@ -553,10 +482,10 @@ F 3 "" H 3650 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR078
 U 1 1 67761B48
 P 6400 3450
-F 0 "#PWR?" H 6400 3300 50  0001 C CNN
+F 0 "#PWR078" H 6400 3300 50  0001 C CNN
 F 1 "+5V" V 6415 3578 50  0000 L CNN
 F 2 "" H 6400 3450 50  0001 C CNN
 F 3 "" H 6400 3450 50  0001 C CNN
@@ -564,10 +493,10 @@ F 3 "" H 6400 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR070
 U 1 1 67761B4E
 P 5600 4200
-F 0 "#PWR?" H 5600 3950 50  0001 C CNN
+F 0 "#PWR070" H 5600 3950 50  0001 C CNN
 F 1 "GND" V 5605 4072 50  0000 R CNN
 F 2 "" H 5600 4200 50  0001 C CNN
 F 3 "" H 5600 4200 50  0001 C CNN
@@ -575,10 +504,10 @@ F 3 "" H 5600 4200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR075
 U 1 1 67761B54
 P 5600 5300
-F 0 "#PWR?" H 5600 5050 50  0001 C CNN
+F 0 "#PWR075" H 5600 5050 50  0001 C CNN
 F 1 "GND" V 5605 5172 50  0000 R CNN
 F 2 "" H 5600 5300 50  0001 C CNN
 F 3 "" H 5600 5300 50  0001 C CNN
@@ -586,10 +515,10 @@ F 3 "" H 5600 5300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR074
 U 1 1 67761B5A
 P 5600 5200
-F 0 "#PWR?" H 5600 4950 50  0001 C CNN
+F 0 "#PWR074" H 5600 4950 50  0001 C CNN
 F 1 "GND" V 5605 5072 50  0000 R CNN
 F 2 "" H 5600 5200 50  0001 C CNN
 F 3 "" H 5600 5200 50  0001 C CNN
@@ -597,10 +526,10 @@ F 3 "" H 5600 5200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR073
 U 1 1 67761B60
 P 5600 5100
-F 0 "#PWR?" H 5600 4850 50  0001 C CNN
+F 0 "#PWR073" H 5600 4850 50  0001 C CNN
 F 1 "GND" V 5605 4972 50  0000 R CNN
 F 2 "" H 5600 5100 50  0001 C CNN
 F 3 "" H 5600 5100 50  0001 C CNN
@@ -608,10 +537,10 @@ F 3 "" H 5600 5100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR072
 U 1 1 67761B66
 P 5600 5000
-F 0 "#PWR?" H 5600 4750 50  0001 C CNN
+F 0 "#PWR072" H 5600 4750 50  0001 C CNN
 F 1 "GND" V 5605 4872 50  0000 R CNN
 F 2 "" H 5600 5000 50  0001 C CNN
 F 3 "" H 5600 5000 50  0001 C CNN
@@ -619,10 +548,10 @@ F 3 "" H 5600 5000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR071
 U 1 1 67761B6C
 P 5600 4800
-F 0 "#PWR?" H 5600 4550 50  0001 C CNN
+F 0 "#PWR071" H 5600 4550 50  0001 C CNN
 F 1 "GND" V 5605 4672 50  0000 R CNN
 F 2 "" H 5600 4800 50  0001 C CNN
 F 3 "" H 5600 4800 50  0001 C CNN
@@ -630,10 +559,10 @@ F 3 "" H 5600 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR077
 U 1 1 67761B72
 P 6300 5700
-F 0 "#PWR?" H 6300 5450 50  0001 C CNN
+F 0 "#PWR077" H 6300 5450 50  0001 C CNN
 F 1 "GND" H 6305 5527 50  0000 C CNN
 F 2 "" H 6300 5700 50  0001 C CNN
 F 3 "" H 6300 5700 50  0001 C CNN
@@ -641,10 +570,10 @@ F 3 "" H 6300 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR076
 U 1 1 67761B78
 P 5800 3450
-F 0 "#PWR?" H 5800 3200 50  0001 C CNN
+F 0 "#PWR076" H 5800 3200 50  0001 C CNN
 F 1 "GND" V 5805 3322 50  0000 R CNN
 F 2 "" H 5800 3450 50  0001 C CNN
 F 3 "" H 5800 3450 50  0001 C CNN
@@ -652,10 +581,10 @@ F 3 "" H 5800 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR062
 U 1 1 67761B7E
 P 3050 3450
-F 0 "#PWR?" H 3050 3200 50  0001 C CNN
+F 0 "#PWR062" H 3050 3200 50  0001 C CNN
 F 1 "GND" V 3055 3322 50  0000 R CNN
 F 2 "" H 3050 3450 50  0001 C CNN
 F 3 "" H 3050 3450 50  0001 C CNN
@@ -663,10 +592,10 @@ F 3 "" H 3050 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR063
 U 1 1 67761B84
 P 3550 5700
-F 0 "#PWR?" H 3550 5450 50  0001 C CNN
+F 0 "#PWR063" H 3550 5450 50  0001 C CNN
 F 1 "GND" H 3555 5527 50  0000 C CNN
 F 2 "" H 3550 5700 50  0001 C CNN
 F 3 "" H 3550 5700 50  0001 C CNN
@@ -674,10 +603,10 @@ F 3 "" H 3550 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR061
 U 1 1 67761B8A
 P 2850 5300
-F 0 "#PWR?" H 2850 5050 50  0001 C CNN
+F 0 "#PWR061" H 2850 5050 50  0001 C CNN
 F 1 "GND" V 2855 5172 50  0000 R CNN
 F 2 "" H 2850 5300 50  0001 C CNN
 F 3 "" H 2850 5300 50  0001 C CNN
@@ -685,10 +614,10 @@ F 3 "" H 2850 5300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR060
 U 1 1 67761B90
 P 2850 5200
-F 0 "#PWR?" H 2850 4950 50  0001 C CNN
+F 0 "#PWR060" H 2850 4950 50  0001 C CNN
 F 1 "GND" V 2855 5072 50  0000 R CNN
 F 2 "" H 2850 5200 50  0001 C CNN
 F 3 "" H 2850 5200 50  0001 C CNN
@@ -696,10 +625,10 @@ F 3 "" H 2850 5200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR059
 U 1 1 67761B96
 P 2850 5100
-F 0 "#PWR?" H 2850 4850 50  0001 C CNN
+F 0 "#PWR059" H 2850 4850 50  0001 C CNN
 F 1 "GND" V 2855 4972 50  0000 R CNN
 F 2 "" H 2850 5100 50  0001 C CNN
 F 3 "" H 2850 5100 50  0001 C CNN
@@ -707,10 +636,10 @@ F 3 "" H 2850 5100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR058
 U 1 1 67761B9C
 P 2850 5000
-F 0 "#PWR?" H 2850 4750 50  0001 C CNN
+F 0 "#PWR058" H 2850 4750 50  0001 C CNN
 F 1 "GND" V 2855 4872 50  0000 R CNN
 F 2 "" H 2850 5000 50  0001 C CNN
 F 3 "" H 2850 5000 50  0001 C CNN
@@ -718,10 +647,10 @@ F 3 "" H 2850 5000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR057
 U 1 1 67761BA2
 P 2850 4900
-F 0 "#PWR?" H 2850 4650 50  0001 C CNN
+F 0 "#PWR057" H 2850 4650 50  0001 C CNN
 F 1 "GND" V 2855 4772 50  0000 R CNN
 F 2 "" H 2850 4900 50  0001 C CNN
 F 3 "" H 2850 4900 50  0001 C CNN
@@ -729,10 +658,10 @@ F 3 "" H 2850 4900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR056
 U 1 1 67761BA8
 P 2850 4200
-F 0 "#PWR?" H 2850 3950 50  0001 C CNN
+F 0 "#PWR056" H 2850 3950 50  0001 C CNN
 F 1 "GND" V 2855 4072 50  0000 R CNN
 F 2 "" H 2850 4200 50  0001 C CNN
 F 3 "" H 2850 4200 50  0001 C CNN
@@ -740,31 +669,14 @@ F 3 "" H 2850 4200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Driver_LED:PCA9685PW U?
+L Driver_LED:PCA9685PW U1
 U 1 1 67761BAE
 P 3550 4600
-F 0 "U?" H 3550 5781 50  0000 C CNN
+F 0 "U1" H 3550 5781 50  0000 C CNN
 F 1 "PCA9685PW" H 3550 5690 50  0000 C CNN
 F 2 "Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm" H 3575 3625 50  0001 L CNN
 F 3 "http://www.nxp.com/documents/data_sheet/PCA9685.pdf" H 3150 5300 50  0001 C CNN
 	1    3550 4600
-	1    0    0    -1  
-$EndComp
-Text GLabel 5600 4100 0    50   Input ~ 0
-PWMCLK
-Text GLabel 2850 4100 0    50   Input ~ 0
-PWMCLK
-Text GLabel 5250 3100 2    50   Input ~ 0
-PWMCLK
-$Comp
-L power:GND1 #PWR?
-U 1 1 67761BB7
-P 4950 3400
-F 0 "#PWR?" H 4950 3150 50  0001 C CNN
-F 1 "GND1" H 4955 3227 50  0000 C CNN
-F 2 "" H 4950 3400 50  0001 C CNN
-F 3 "" H 4950 3400 50  0001 C CNN
-	1    4950 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -777,12 +689,12 @@ Connection ~ 4950 2700
 Wire Wire Line
 	4600 2700 4950 2700
 $Comp
-L Device:R_Small R?
+L Device:R_Small R20
 U 1 1 67761BC2
 P 4600 2800
-F 0 "R?" H 4541 2754 50  0000 R CNN
+F 0 "R20" H 4541 2754 50  0000 R CNN
 F 1 "200" H 4541 2845 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4600 2800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4600 2800 50  0001 C CNN
 F 3 "~" H 4600 2800 50  0001 C CNN
 	1    4600 2800
 	-1   0    0    1   
@@ -790,10 +702,10 @@ $EndComp
 Wire Wire Line
 	4950 2650 4950 2700
 $Comp
-L Oscillator:SG-8002CE X?
+L Oscillator:SG-8002CE X1
 U 1 1 67761BC9
 P 4950 3100
-F 0 "X?" H 5294 3146 50  0000 L CNN
+F 0 "X1" H 5294 3146 50  0000 L CNN
 F 1 "SG-8002CE" H 5294 3055 50  0000 L CNN
 F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm" H 5650 2750 50  0001 C CNN
 F 3 "https://support.epson.biz/td/api/doc_check.php?mode=dl&lang=en&Parts=SG-8002DC" H 4850 3100 50  0001 C CNN
@@ -801,175 +713,175 @@ F 3 "https://support.epson.biz/td/api/doc_check.php?mode=dl&lang=en&Parts=SG-800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R37
 U 1 1 67761BCF
 P 7100 5400
-F 0 "R?" V 7296 5400 50  0000 C CNN
+F 0 "R37" V 7296 5400 50  0000 C CNN
 F 1 "220" V 7205 5400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 5400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 5400 50  0001 C CNN
 F 3 "~" H 7100 5400 50  0001 C CNN
 	1    7100 5400
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R36
 U 1 1 67761BD5
 P 7100 5300
-F 0 "R?" V 7296 5300 50  0000 C CNN
+F 0 "R36" V 7296 5300 50  0000 C CNN
 F 1 "220" V 7205 5300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 5300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 5300 50  0001 C CNN
 F 3 "~" H 7100 5300 50  0001 C CNN
 	1    7100 5300
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R35
 U 1 1 67761BDB
 P 7100 5200
-F 0 "R?" V 7296 5200 50  0000 C CNN
+F 0 "R35" V 7296 5200 50  0000 C CNN
 F 1 "220" V 7205 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 5200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 5200 50  0001 C CNN
 F 3 "~" H 7100 5200 50  0001 C CNN
 	1    7100 5200
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R34
 U 1 1 67761BE1
 P 7100 5100
-F 0 "R?" V 7296 5100 50  0000 C CNN
+F 0 "R34" V 7296 5100 50  0000 C CNN
 F 1 "220" V 7205 5100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 5100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 5100 50  0001 C CNN
 F 3 "~" H 7100 5100 50  0001 C CNN
 	1    7100 5100
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R33
 U 1 1 67761BE7
 P 7100 5000
-F 0 "R?" V 7296 5000 50  0000 C CNN
+F 0 "R33" V 7296 5000 50  0000 C CNN
 F 1 "220" V 7205 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 5000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 5000 50  0001 C CNN
 F 3 "~" H 7100 5000 50  0001 C CNN
 	1    7100 5000
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R32
 U 1 1 67761BED
 P 7100 4900
-F 0 "R?" V 7296 4900 50  0000 C CNN
+F 0 "R32" V 7296 4900 50  0000 C CNN
 F 1 "220" V 7205 4900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 4900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 4900 50  0001 C CNN
 F 3 "~" H 7100 4900 50  0001 C CNN
 	1    7100 4900
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R31
 U 1 1 67761BF3
 P 7100 4800
-F 0 "R?" V 7296 4800 50  0000 C CNN
+F 0 "R31" V 7296 4800 50  0000 C CNN
 F 1 "220" V 7205 4800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 4800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 4800 50  0001 C CNN
 F 3 "~" H 7100 4800 50  0001 C CNN
 	1    7100 4800
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R30
 U 1 1 67761BF9
 P 7100 4700
-F 0 "R?" V 7296 4700 50  0000 C CNN
+F 0 "R30" V 7296 4700 50  0000 C CNN
 F 1 "220" V 7205 4700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 4700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 4700 50  0001 C CNN
 F 3 "~" H 7100 4700 50  0001 C CNN
 	1    7100 4700
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R29
 U 1 1 67761BFF
 P 7100 4600
-F 0 "R?" V 7296 4600 50  0000 C CNN
+F 0 "R29" V 7296 4600 50  0000 C CNN
 F 1 "220" V 7205 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 4600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 4600 50  0001 C CNN
 F 3 "~" H 7100 4600 50  0001 C CNN
 	1    7100 4600
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R28
 U 1 1 67761C05
 P 7100 4500
-F 0 "R?" V 7296 4500 50  0000 C CNN
+F 0 "R28" V 7296 4500 50  0000 C CNN
 F 1 "220" V 7205 4500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 4500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 4500 50  0001 C CNN
 F 3 "~" H 7100 4500 50  0001 C CNN
 	1    7100 4500
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R27
 U 1 1 67761C0B
 P 7100 4400
-F 0 "R?" V 7296 4400 50  0000 C CNN
+F 0 "R27" V 7296 4400 50  0000 C CNN
 F 1 "220" V 7205 4400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 4400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 4400 50  0001 C CNN
 F 3 "~" H 7100 4400 50  0001 C CNN
 	1    7100 4400
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R26
 U 1 1 67761C11
 P 7100 4300
-F 0 "R?" V 7296 4300 50  0000 C CNN
+F 0 "R26" V 7296 4300 50  0000 C CNN
 F 1 "220" V 7205 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 4300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 4300 50  0001 C CNN
 F 3 "~" H 7100 4300 50  0001 C CNN
 	1    7100 4300
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R25
 U 1 1 67761C17
 P 7100 4200
-F 0 "R?" V 7296 4200 50  0000 C CNN
+F 0 "R25" V 7296 4200 50  0000 C CNN
 F 1 "220" V 7205 4200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 4200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 4200 50  0001 C CNN
 F 3 "~" H 7100 4200 50  0001 C CNN
 	1    7100 4200
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R24
 U 1 1 67761C1D
 P 7100 4100
-F 0 "R?" V 7296 4100 50  0000 C CNN
+F 0 "R24" V 7296 4100 50  0000 C CNN
 F 1 "220" V 7205 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 4100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 4100 50  0001 C CNN
 F 3 "~" H 7100 4100 50  0001 C CNN
 	1    7100 4100
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R23
 U 1 1 67761C23
 P 7100 4000
-F 0 "R?" V 7296 4000 50  0000 C CNN
+F 0 "R23" V 7296 4000 50  0000 C CNN
 F 1 "220" V 7205 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 4000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7100 4000 50  0001 C CNN
 F 3 "~" H 7100 4000 50  0001 C CNN
 	1    7100 4000
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R21
 U 1 1 67761C29
 P 5500 4900
-F 0 "R?" V 5696 4900 50  0000 C CNN
+F 0 "R21" V 5696 4900 50  0000 C CNN
 F 1 "10k" V 5605 4900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5500 4900 50  0001 C CNN
 F 3 "~" H 5500 4900 50  0001 C CNN
@@ -977,46 +889,16 @@ F 3 "~" H 5500 4900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR069
 U 1 1 67761C2F
 P 5400 4900
-F 0 "#PWR?" H 5400 4750 50  0001 C CNN
+F 0 "#PWR069" H 5400 4750 50  0001 C CNN
 F 1 "+3.3V" V 5415 5028 50  0000 L CNN
 F 2 "" H 5400 4900 50  0001 C CNN
 F 3 "" H 5400 4900 50  0001 C CNN
 	1    5400 4900
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7200 5400 2    50   Input ~ 0
-PWM31
-Text GLabel 7200 5200 2    50   Input ~ 0
-PWM30
-Text GLabel 7200 5000 2    50   Input ~ 0
-PWM29
-Text GLabel 7200 4800 2    50   Input ~ 0
-PWM28
-Text GLabel 7200 4600 2    50   Input ~ 0
-PWM27
-Text GLabel 7200 4400 2    50   Input ~ 0
-PWM26
-Text GLabel 7200 4200 2    50   Input ~ 0
-PWM25
-Text GLabel 7200 4000 2    50   Input ~ 0
-PWM24
-Text GLabel 4450 5400 2    50   Input ~ 0
-PWM23
-Text GLabel 4450 5200 2    50   Input ~ 0
-PWM22
-Text GLabel 4450 5000 2    50   Input ~ 0
-PWM21
-Text GLabel 4450 4800 2    50   Input ~ 0
-PWM20
-Text GLabel 4450 4600 2    50   Input ~ 0
-PWM19
-Text GLabel 4450 4400 2    50   Input ~ 0
-PWM18
-Text GLabel 4450 4200 2    50   Input ~ 0
-PWM17
 Wire Wire Line
 	6300 3450 6400 3450
 Connection ~ 6300 3450
@@ -1025,50 +907,16 @@ Wire Wire Line
 Wire Wire Line
 	6000 3450 6300 3450
 $Comp
-L Device:C_Small C?
+L Device:C_Small C6
 U 1 1 67761C48
 P 5900 3450
-F 0 "C?" V 6129 3450 50  0000 C CNN
+F 0 "C6" V 6129 3450 50  0000 C CNN
 F 1 "10uF" V 6038 3450 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5900 3450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5900 3450 50  0001 C CNN
 F 3 "~" H 5900 3450 50  0001 C CNN
 	1    5900 3450
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5600 4000 0    50   Input ~ 0
-SD0
-Text GLabel 5600 3900 0    50   Input ~ 0
-SC0
-Text GLabel 4450 3900 2    50   Input ~ 0
-PWM0
-Text GLabel 4450 4100 2    50   Input ~ 0
-PWM1
-Text GLabel 4450 4300 2    50   Input ~ 0
-PWM2
-Text GLabel 4450 4500 2    50   Input ~ 0
-PWM3
-Text GLabel 4450 4700 2    50   Input ~ 0
-PWM4
-Text GLabel 4450 4900 2    50   Input ~ 0
-PWM5
-Text GLabel 4450 5100 2    50   Input ~ 0
-PWM6
-Text GLabel 7200 3900 2    50   Input ~ 0
-PWM8
-Text GLabel 7200 4100 2    50   Input ~ 0
-PWM9
-Text GLabel 7200 4300 2    50   Input ~ 0
-PWM10
-Text GLabel 7200 4500 2    50   Input ~ 0
-PWM11
-Text GLabel 7200 4700 2    50   Input ~ 0
-PWM12
-Text GLabel 7200 4900 2    50   Input ~ 0
-PWM13
-Text GLabel 7200 5100 2    50   Input ~ 0
-PWM14
-Text GLabel 7200 5300 2    50   Input ~ 0
-PWM15
 Wire Wire Line
 	3550 3450 3650 3450
 Connection ~ 3550 3450
@@ -1077,25 +925,21 @@ Wire Wire Line
 Wire Wire Line
 	3250 3450 3550 3450
 $Comp
-L Device:C_Small C?
+L Device:C_Small C3
 U 1 1 67761C63
 P 3150 3450
-F 0 "C?" V 3379 3450 50  0000 C CNN
+F 0 "C3" V 3379 3450 50  0000 C CNN
 F 1 "10uF" V 3288 3450 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3150 3450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3150 3450 50  0001 C CNN
 F 3 "~" H 3150 3450 50  0001 C CNN
 	1    3150 3450
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2850 4000 0    50   Input ~ 0
-SD0
-Text GLabel 2850 3900 0    50   Input ~ 0
-SC0
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR055
 U 1 1 67761C6B
 P 2650 4800
-F 0 "#PWR?" H 2650 4650 50  0001 C CNN
+F 0 "#PWR055" H 2650 4650 50  0001 C CNN
 F 1 "+3.3V" V 2665 4928 50  0000 L CNN
 F 2 "" H 2650 4800 50  0001 C CNN
 F 3 "" H 2650 4800 50  0001 C CNN
@@ -1103,10 +947,10 @@ F 3 "" H 2650 4800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R3
 U 1 1 67761C71
 P 2750 4800
-F 0 "R?" H 2809 4846 50  0000 L CNN
+F 0 "R3" H 2809 4846 50  0000 L CNN
 F 1 "10k" H 2809 4755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2750 4800 50  0001 C CNN
 F 3 "~" H 2750 4800 50  0001 C CNN
@@ -1114,10 +958,10 @@ F 3 "~" H 2750 4800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR051
 U 1 1 67761C77
 P 1950 2150
-F 0 "#PWR?" H 1950 2000 50  0001 C CNN
+F 0 "#PWR051" H 1950 2000 50  0001 C CNN
 F 1 "+5V" V 1965 2278 50  0000 L CNN
 F 2 "" H 1950 2150 50  0001 C CNN
 F 3 "" H 1950 2150 50  0001 C CNN
@@ -1125,12 +969,6 @@ F 3 "" H 1950 2150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 1950 2150
-Connection ~ 2250 2200
-Connection ~ 2050 2150
-Wire Wire Line
-	2050 2150 2250 2150
-Wire Wire Line
-	1950 2150 2050 2150
 Connection ~ 4150 2150
 Wire Wire Line
 	4150 2150 4250 2150
@@ -1178,24 +1016,12 @@ Wire Wire Line
 	2750 2150 2850 2150
 Wire Wire Line
 	2550 2150 2750 2150
-Connection ~ 2050 2350
 Connection ~ 1950 2500
 $Comp
-L Device:C_Small C?
-U 1 1 67761CA3
-P 2050 2250
-F 0 "C?" H 2142 2296 50  0000 L CNN
-F 1 "0.1uF" H 2142 2205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2050 2250 50  0001 C CNN
-F 3 "~" H 2050 2250 50  0001 C CNN
-	1    2050 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
+L power:GND #PWR052
 U 1 1 67761CA9
 P 1950 2500
-F 0 "#PWR?" H 1950 2250 50  0001 C CNN
+F 0 "#PWR052" H 1950 2250 50  0001 C CNN
 F 1 "GND" V 1955 2372 50  0000 R CNN
 F 2 "" H 1950 2500 50  0001 C CNN
 F 3 "" H 1950 2500 50  0001 C CNN
@@ -1203,40 +1029,10 @@ F 3 "" H 1950 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
-U 1 1 67761CAF
-P 2250 2350
-F 0 "C?" H 2365 2396 50  0000 L CNN
-F 1 "4700uF" H 2365 2305 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2288 2200 50  0001 C CNN
-F 3 "~" H 2250 2350 50  0001 C CNN
-	1    2250 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 2500 2250 2500
-Connection ~ 2050 2500
-Wire Wire Line
-	2050 2350 2050 2500
-$Comp
-L Device:C_Small C?
-U 1 1 67761CB8
-P 2050 2250
-F 0 "C?" H 2142 2296 50  0000 L CNN
-F 1 "0.1uF" H 2142 2205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2050 2250 50  0001 C CNN
-F 3 "~" H 2050 2250 50  0001 C CNN
-	1    2050 2250
-	1    0    0    -1  
-$EndComp
-Connection ~ 2250 2500
-Wire Wire Line
-	1950 2500 2050 2500
-$Comp
-L power:GND #PWR?
+L power:GND #PWR053
 U 1 1 67761CC0
 P 1950 2500
-F 0 "#PWR?" H 1950 2250 50  0001 C CNN
+F 0 "#PWR053" H 1950 2250 50  0001 C CNN
 F 1 "GND" V 1955 2372 50  0000 R CNN
 F 2 "" H 1950 2500 50  0001 C CNN
 F 3 "" H 1950 2500 50  0001 C CNN
@@ -1244,39 +1040,23 @@ F 3 "" H 1950 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C2
 U 1 1 67761CC6
 P 2250 2350
-F 0 "C?" H 2365 2396 50  0000 L CNN
+F 0 "C2" H 2365 2396 50  0000 L CNN
 F 1 "4700uF" H 2365 2305 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2288 2200 50  0001 C CNN
 F 3 "~" H 2250 2350 50  0001 C CNN
 	1    2250 2350
 	1    0    0    -1  
 $EndComp
-Text GLabel 3350 2700 1    50   Input ~ 0
-PWM22
-Text GLabel 3250 2700 1    50   Input ~ 0
-PWM21
-Text GLabel 3150 2700 1    50   Input ~ 0
-PWM20
-Text GLabel 3050 2700 1    50   Input ~ 0
-PWM19
-Text GLabel 2950 2700 1    50   Input ~ 0
-PWM18
-Text GLabel 2850 2700 1    50   Input ~ 0
-PWM17
-Text GLabel 2750 2700 1    50   Input ~ 0
-PWM16
 Wire Wire Line
 	2550 2500 2550 2150
-Wire Wire Line
-	2250 2500 2550 2500
 $Comp
-L Connector_Generic:Conn_01x16 J?
+L Connector_Generic:Conn_01x16 J7
 U 1 1 67761CD5
 P 3550 2900
-F 0 "J?" V 3675 2846 50  0000 C CNN
+F 0 "J7" V 3675 2846 50  0000 C CNN
 F 1 "PWM Signal Rail 2" V 3766 2846 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 3550 2900 50  0001 C CNN
 F 3 "~" H 3550 2900 50  0001 C CNN
@@ -1284,14 +1064,253 @@ F 3 "~" H 3550 2900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x16 J?
+L Connector_Generic:Conn_01x16 J6
 U 1 1 67761CDB
 P 3550 2350
-F 0 "J?" V 3675 2296 50  0000 C CNN
+F 0 "J6" V 3675 2296 50  0000 C CNN
 F 1 "PWM GND Rail 2" V 3766 2296 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 3550 2350 50  0001 C CNN
 F 3 "~" H 3550 2350 50  0001 C CNN
 	1    3550 2350
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	5250 3100 5400 3100
+Text Label 5400 3100 0    50   ~ 0
+PWMCLK
+Text Label 5600 4100 2    50   ~ 0
+PWMCLK
+Text Label 2850 4100 2    50   ~ 0
+PWMCLK
+Text Label 2850 3900 2    50   ~ 0
+SCL
+Text Label 2850 4000 2    50   ~ 0
+SDA
+Text Label 5600 3900 2    50   ~ 0
+SCL
+Text Label 5600 4000 2    50   ~ 0
+SDA
+Text Label 4450 3900 0    50   ~ 0
+PWM0
+Text Label 4450 4000 0    50   ~ 0
+PWM16
+Text Label 4450 4100 0    50   ~ 0
+PWM1
+Text Label 4450 4200 0    50   ~ 0
+PWM17
+Text Label 4450 4300 0    50   ~ 0
+PWM2
+Text Label 4450 4400 0    50   ~ 0
+PWM18
+Text Label 4450 4500 0    50   ~ 0
+PWM3
+Text Label 4450 4600 0    50   ~ 0
+PWM19
+Text Label 4450 4700 0    50   ~ 0
+PWM4
+Text Label 4450 4800 0    50   ~ 0
+PWM20
+Text Label 4450 4900 0    50   ~ 0
+PWM5
+Text Label 4450 5000 0    50   ~ 0
+PWM21
+Text Label 4450 5100 0    50   ~ 0
+PWM6
+Text Label 4450 5200 0    50   ~ 0
+PWM22
+Text Label 4450 5300 0    50   ~ 0
+PWM7
+Text Label 4450 5400 0    50   ~ 0
+PWM23
+Text Label 7200 3900 0    50   ~ 0
+PWM8
+Text Label 7200 4000 0    50   ~ 0
+PWM24
+Text Label 7200 4100 0    50   ~ 0
+PWM9
+Text Label 7200 4200 0    50   ~ 0
+PWM25
+Text Label 7200 4300 0    50   ~ 0
+PWM10
+Text Label 7200 4400 0    50   ~ 0
+PWM26
+Text Label 7200 4500 0    50   ~ 0
+PWM11
+Text Label 7200 4600 0    50   ~ 0
+PWM27
+Text Label 7200 4700 0    50   ~ 0
+PWM12
+Text Label 7200 4800 0    50   ~ 0
+PWM28
+Text Label 7200 4900 0    50   ~ 0
+PWM13
+Text Label 7200 5000 0    50   ~ 0
+PWM29
+Text Label 7200 5100 0    50   ~ 0
+PWM14
+Text Label 7200 5200 0    50   ~ 0
+PWM30
+Text Label 7200 5300 0    50   ~ 0
+PWM15
+Text Label 7200 5400 0    50   ~ 0
+PWM31
+Text Label 2750 2700 1    50   ~ 0
+PWM0
+Text Label 2850 2700 1    50   ~ 0
+PWM1
+Text Label 2950 2700 1    50   ~ 0
+PWM2
+Text Label 3050 2700 1    50   ~ 0
+PWM3
+Text Label 3150 2700 1    50   ~ 0
+PWM4
+Text Label 3250 2700 1    50   ~ 0
+PWM5
+Text Label 3350 2700 1    50   ~ 0
+PWM6
+Text Label 3450 2700 1    50   ~ 0
+PWM7
+Text Label 3550 2700 1    50   ~ 0
+PWM8
+Text Label 3650 2700 1    50   ~ 0
+PWM9
+Text Label 3750 2700 1    50   ~ 0
+PWM10
+Text Label 3850 2700 1    50   ~ 0
+PWM11
+Text Label 3950 2700 1    50   ~ 0
+PWM12
+Text Label 4050 2700 1    50   ~ 0
+PWM13
+Text Label 4150 2700 1    50   ~ 0
+PWM14
+Text Label 4250 2700 1    50   ~ 0
+PWM15
+Text Label 5900 2600 1    50   ~ 0
+PWM16
+Text Label 6000 2600 1    50   ~ 0
+PWM17
+Text Label 6100 2600 1    50   ~ 0
+PWM18
+Text Label 6200 2600 1    50   ~ 0
+PWM19
+Text Label 6300 2600 1    50   ~ 0
+PWM20
+Text Label 6400 2600 1    50   ~ 0
+PWM21
+Text Label 6500 2600 1    50   ~ 0
+PWM22
+Text Label 6600 2600 1    50   ~ 0
+PWM23
+Text Label 6700 2600 1    50   ~ 0
+PWM24
+Text Label 6800 2600 1    50   ~ 0
+PWM25
+Text Label 6900 2600 1    50   ~ 0
+PWM26
+Text Label 7000 2600 1    50   ~ 0
+PWM27
+Text Label 7100 2600 1    50   ~ 0
+PWM28
+Text Label 7200 2600 1    50   ~ 0
+PWM29
+Text Label 7300 2600 1    50   ~ 0
+PWM30
+Text Label 7400 2600 1    50   ~ 0
+PWM31
+$Comp
+L power:GND #PWR066
+U 1 1 67EA0815
+P 4950 3400
+F 0 "#PWR066" H 4950 3150 50  0001 C CNN
+F 1 "GND" H 4955 3227 50  0000 C CNN
+F 2 "" H 4950 3400 50  0001 C CNN
+F 3 "" H 4950 3400 50  0001 C CNN
+	1    4950 3400
+	1    0    0    -1  
+$EndComp
+Text HLabel 1750 3200 1    50   Input ~ 0
+GND
+Text HLabel 1850 3200 1    50   Input ~ 0
+5V
+Text HLabel 1950 3200 1    50   Input ~ 0
+3.3V
+Text HLabel 2050 3200 1    50   Input ~ 0
+SCL
+Text HLabel 2150 3200 1    50   Input ~ 0
+SDA
+$Comp
+L power:GND #PWR048
+U 1 1 67EA4543
+P 1750 3200
+F 0 "#PWR048" H 1750 2950 50  0001 C CNN
+F 1 "GND" H 1755 3027 50  0000 C CNN
+F 2 "" H 1750 3200 50  0001 C CNN
+F 3 "" H 1750 3200 50  0001 C CNN
+	1    1750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR049
+U 1 1 67EA4E53
+P 1850 3200
+F 0 "#PWR049" H 1850 3050 50  0001 C CNN
+F 1 "+5V" H 1865 3373 50  0000 C CNN
+F 2 "" H 1850 3200 50  0001 C CNN
+F 3 "" H 1850 3200 50  0001 C CNN
+	1    1850 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR054
+U 1 1 67EA5883
+P 1950 3200
+F 0 "#PWR054" H 1950 3050 50  0001 C CNN
+F 1 "+3.3V" H 1965 3373 50  0000 C CNN
+F 2 "" H 1950 3200 50  0001 C CNN
+F 3 "" H 1950 3200 50  0001 C CNN
+	1    1950 3200
+	-1   0    0    1   
+$EndComp
+Text Label 2050 3200 3    50   ~ 0
+SCL
+Text Label 2150 3200 3    50   ~ 0
+SDA
+Connection ~ 2250 2500
+Wire Wire Line
+	2250 2500 2550 2500
+$Comp
+L Device:C_Small C1
+U 1 1 67761CA3
+P 1950 2250
+F 0 "C1" H 2042 2296 50  0000 L CNN
+F 1 "0.1uF" H 2042 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1950 2250 50  0001 C CNN
+F 3 "~" H 1950 2250 50  0001 C CNN
+	1    1950 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2400 5650 2400
+Wire Wire Line
+	5150 2400 5350 2400
+Connection ~ 5350 2400
+Connection ~ 5350 2100
+$Comp
+L Device:C C5
+U 1 1 67761AD3
+P 5350 2250
+F 0 "C5" H 5465 2296 50  0000 L CNN
+F 1 "4700uF" H 5465 2205 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 5388 2100 50  0001 C CNN
+F 3 "~" H 5350 2250 50  0001 C CNN
+	1    5350 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2150 2250 2150
+Wire Wire Line
+	1950 2500 2250 2500
+Wire Wire Line
+	1950 2350 1950 2500
 $EndSCHEMATC
